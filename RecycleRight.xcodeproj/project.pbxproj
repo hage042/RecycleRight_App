@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D73F24C27FD44D3005893A8 /* CompostIntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D73F24B27FD44D3005893A8 /* CompostIntroView.swift */; };
+		3D73F24D27FD44D3005893A8 /* CompostIntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D73F24B27FD44D3005893A8 /* CompostIntroView.swift */; };
+		3D9FA7D927FFB883007B107E /* Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9FA7D827FFB883007B107E /* Feature.swift */; };
+		3D9FA7DA27FFB883007B107E /* Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9FA7D827FFB883007B107E /* Feature.swift */; };
+		3DDE155D2800FA51001F83E4 /* FeatureItemMP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDE155C2800FA51001F83E4 /* FeatureItemMP.swift */; };
+		3DDE155E2800FA51001F83E4 /* FeatureItemMP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDE155C2800FA51001F83E4 /* FeatureItemMP.swift */; };
+		3DDE156028011C36001F83E4 /* ScanABinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDE155F28011C36001F83E4 /* ScanABinView.swift */; };
+		3DDE156128011C36001F83E4 /* ScanABinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDE155F28011C36001F83E4 /* ScanABinView.swift */; };
 		9637E12326C479C400DEF71D /* CourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9637E12226C479C400DEF71D /* CourseView.swift */; };
 		9637E12426C479C400DEF71D /* CourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9637E12226C479C400DEF71D /* CourseView.swift */; };
 		9637E12626C47B5200DEF71D /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9637E12526C47B5200DEF71D /* SectionView.swift */; };
@@ -121,6 +129,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D73F24B27FD44D3005893A8 /* CompostIntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompostIntroView.swift; sourceTree = "<group>"; };
+		3D9FA7D827FFB883007B107E /* Feature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature.swift; sourceTree = "<group>"; };
+		3DDE155C2800FA51001F83E4 /* FeatureItemMP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureItemMP.swift; sourceTree = "<group>"; };
+		3DDE155F28011C36001F83E4 /* ScanABinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanABinView.swift; sourceTree = "<group>"; };
 		9637E12226C479C400DEF71D /* CourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseView.swift; sourceTree = "<group>"; };
 		9637E12526C47B5200DEF71D /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
 		964333F026A1DEE0008CC890 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
@@ -207,6 +219,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3DDE156228011C42001F83E4 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				3D73F24B27FD44D3005893A8 /* CompostIntroView.swift */,
+				3DDE155F28011C36001F83E4 /* ScanABinView.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
 		967ED6B8267A767C005B2358 = {
 			isa = PBXGroup;
 			children = (
@@ -261,6 +282,7 @@
 		969FAAFC2684F795007D1C4C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				3DDE156228011C42001F83E4 /* Custom */,
 				96A4AB5126BDD26C008642CE /* Main */,
 				96A4AB5326BDD2A3008642CE /* Detail */,
 				96A4AB5226BDD283008642CE /* Modals */,
@@ -293,6 +315,7 @@
 			isa = PBXGroup;
 			children = (
 				9646052F267D7464003F4A4F /* Course.swift */,
+				3D9FA7D827FFB883007B107E /* Feature.swift */,
 				96A4AB4226BC8703008642CE /* CourseSection.swift */,
 				968B4E4526BC67F900B4E70B /* Topic.swift */,
 				968B4E4B26BC758C00B4E70B /* Handbook.swift */,
@@ -346,6 +369,7 @@
 				968B4E3F26BC666800B4E70B /* ListRow.swift */,
 				965C786626C6E65000E788C2 /* SectionRow.swift */,
 				96A4AB4E26BDCADA008642CE /* CertificateView.swift */,
+				3DDE155C2800FA51001F83E4 /* FeatureItemMP.swift */,
 			);
 			path = Items;
 			sourceTree = "<group>";
@@ -484,7 +508,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 967ED6BC267A767C005B2358 /* Build configuration list for PBXProject "iOS15" */;
+			buildConfigurationList = 967ED6BC267A767C005B2358 /* Build configuration list for PBXProject "RecycleRight" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -557,6 +581,7 @@
 				96C7695726B9812E00FA23E9 /* AngularButton.swift in Sources */,
 				96C9698A2704B27200CCAC27 /* Update.swift in Sources */,
 				96A4AB4326BC8703008642CE /* CourseSection.swift in Sources */,
+				3D9FA7D927FFB883007B107E /* Feature.swift in Sources */,
 				96775C5226CDAAFB007B83B2 /* Tab.swift in Sources */,
 				9637E12326C479C400DEF71D /* CourseView.swift in Sources */,
 				96C8E28226B0547700BBA0DD /* SignupView.swift in Sources */,
@@ -568,6 +593,7 @@
 				967ED6E2267A767D005B2358 /* ContentView.swift in Sources */,
 				965C78AB26CD502400E788C2 /* ColorExtension.swift in Sources */,
 				968B4E4C26BC758C00B4E70B /* Handbook.swift in Sources */,
+				3DDE155D2800FA51001F83E4 /* FeatureItemMP.swift in Sources */,
 				96A4AB4026BC81E4008642CE /* NotificationsView.swift in Sources */,
 				96C9698126FB7BED00CCAC27 /* HexagonView.swift in Sources */,
 				96B265A626A8A5FB00A7340D /* FeaturedItem.swift in Sources */,
@@ -581,7 +607,9 @@
 				965C786726C6E65000E788C2 /* SectionRow.swift in Sources */,
 				968B4E3A26BC378300B4E70B /* PreferenceKey.swift in Sources */,
 				96692673269F2BEB0041C3EF /* CloseButton.swift in Sources */,
+				3DDE156028011C36001F83E4 /* ScanABinView.swift in Sources */,
 				965C78A826C6FFDF00E788C2 /* PlayButton.swift in Sources */,
+				3D73F24C27FD44D3005893A8 /* CompostIntroView.swift in Sources */,
 				969FAAE526828F34007D1C4C /* HomeView.swift in Sources */,
 				969FAAF126839744007D1C4C /* Sidebar.swift in Sources */,
 				96C8E27F26B053B000BBA0DD /* ModalView.swift in Sources */,
@@ -609,6 +637,7 @@
 				96C7695826B9812E00FA23E9 /* AngularButton.swift in Sources */,
 				96C9698B2704B27200CCAC27 /* Update.swift in Sources */,
 				96A4AB4426BC8703008642CE /* CourseSection.swift in Sources */,
+				3D9FA7DA27FFB883007B107E /* Feature.swift in Sources */,
 				96775C5326CDAAFB007B83B2 /* Tab.swift in Sources */,
 				9637E12426C479C400DEF71D /* CourseView.swift in Sources */,
 				96C8E28326B0547700BBA0DD /* SignupView.swift in Sources */,
@@ -620,6 +649,7 @@
 				967ED6E3267A767D005B2358 /* ContentView.swift in Sources */,
 				965C78AC26CD502400E788C2 /* ColorExtension.swift in Sources */,
 				968B4E4D26BC758C00B4E70B /* Handbook.swift in Sources */,
+				3DDE155E2800FA51001F83E4 /* FeatureItemMP.swift in Sources */,
 				96A4AB4126BC81E4008642CE /* NotificationsView.swift in Sources */,
 				96C9698226FB7BED00CCAC27 /* HexagonView.swift in Sources */,
 				96B265A726A8A5FB00A7340D /* FeaturedItem.swift in Sources */,
@@ -633,7 +663,9 @@
 				965C786826C6E65000E788C2 /* SectionRow.swift in Sources */,
 				968B4E3B26BC378300B4E70B /* PreferenceKey.swift in Sources */,
 				96692674269F2BEB0041C3EF /* CloseButton.swift in Sources */,
+				3DDE156128011C36001F83E4 /* ScanABinView.swift in Sources */,
 				965C78A926C6FFDF00E788C2 /* PlayButton.swift in Sources */,
+				3D73F24D27FD44D3005893A8 /* CompostIntroView.swift in Sources */,
 				969FAAE626828F34007D1C4C /* HomeView.swift in Sources */,
 				969FAAF226839744007D1C4C /* Sidebar.swift in Sources */,
 				96C8E28026B053B000BBA0DD /* ModalView.swift in Sources */,
@@ -793,7 +825,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = THV47RYFCP;
+				DEVELOPMENT_TEAM = 4HCH822N6B;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -823,7 +855,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = THV47RYFCP;
+				DEVELOPMENT_TEAM = 4HCH822N6B;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -1011,7 +1043,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		967ED6BC267A767C005B2358 /* Build configuration list for PBXProject "iOS15" */ = {
+		967ED6BC267A767C005B2358 /* Build configuration list for PBXProject "RecycleRight" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				967ED6E6267A767D005B2358 /* Debug */,

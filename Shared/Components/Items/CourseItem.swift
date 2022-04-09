@@ -30,13 +30,13 @@ struct CourseItem: View {
                     .matchedGeometryEffect(id: "title\(course.index)", in: namespace)
                     .foregroundColor(.white)
                 
-                Text("20 videos - 3 hours".uppercased())
+                Text(course.subtitle.uppercased())
                     .font(.footnote).bold()
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .matchedGeometryEffect(id: "subtitle\(course.index)", in: namespace)
                     .foregroundColor(.white.opacity(0.7))
                 
-                Text("A complete guide to designing for iOS 14 with videos, examples and design...")
+                Text(course.text)
                     .font(.footnote)
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .foregroundColor(.white.opacity(0.7))
