@@ -92,7 +92,7 @@ struct HomeView: View {
     var detail: some View {
         ForEach(featuredCourses) { course in
             if course.index == model.selectedCourse {
-                CourseView(namespace: namespace, course: .constant(course))
+                CourseView(namespace: namespace, selectedMaterial: course.selectedMaterial, course: .constant(course))
             }
         }
     }

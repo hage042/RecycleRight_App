@@ -9,6 +9,7 @@ import SwiftUI
 
 struct CourseView: View {
     var namespace: Namespace.ID
+    var selectedMaterial: Array<CourseSection> ///change potentially idk what this does
     @Binding var course: Course
     var isAnimated = true
     
@@ -16,6 +17,7 @@ struct CourseView: View {
     @State var showSection = false
     @State var appear = [false, false, false]
     @State var selectedSection = courseSections[0]
+
     
     @EnvironmentObject var model: Model
     @Environment(\.horizontalSizeClass) var horizontalSizeClass
@@ -118,13 +120,13 @@ struct CourseView: View {
                         .foregroundColor(.primary)
                         .matchedGeometryEffect(id: "title\(course.index)", in: namespace)
                     
-                    Text("8 videos - 12 hours".uppercased())
+                    Text(course.subtitle.uppercased())
                         .font(.footnote).bold()
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .foregroundColor(.primary.opacity(0.7))
                         .matchedGeometryEffect(id: "subtitle\(course.index)", in: namespace)
                     
-                    Text("A complete guide to designing for iOS 14 with videos, examples and design...")
+                    Text(course.text)
                         .font(.footnote)
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .foregroundColor(.primary.opacity(0.7))
@@ -171,12 +173,13 @@ struct CourseView: View {
     
     var sectionsSection: some View {
         VStack(spacing: 16) {
-            ForEach(Array(courseSections.enumerated()), id: \.offset) { index, section in
+            ForEach(Array(selectedMaterial.enumerated()), id: \.offset) { index, section in   //MOST IMPORTANT THING TO CHANGE IS courseSections.enumerated()
                 if index != 0 { Divider() }
-                SectionRow(section: section)
+                SectionRow(section: section )
                     .onTapGesture {
                         showSection.toggle()
                         selectedSection = section
+                        //selectedMaterial = material
                     }
                     .accessibilityElement(children: .combine)
             }
@@ -252,7 +255,7 @@ struct CourseView_Previews: PreviewProvider {
     @Namespace static var namespace
     
     static var previews: some View {
-        CourseView(namespace: namespace, course: .constant(courses[0]))
+        CourseView(namespace: namespace, selectedMaterial: plasticCourse, course: .constant(courses[0]))
             .environmentObject(Model())
     }
 }
