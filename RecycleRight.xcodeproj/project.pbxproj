@@ -7,10 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D2853BB280A513B006CA6A2 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 3D2853BA280A513B006CA6A2 /* Lottie */; };
+		3D2853BD280A51A9006CA6A2 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2853BC280A51A9006CA6A2 /* LottieView.swift */; };
+		3D2853BE280A51A9006CA6A2 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2853BC280A51A9006CA6A2 /* LottieView.swift */; };
+		3D2853C0280A5401006CA6A2 /* Lottie.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D2853BF280A5401006CA6A2 /* Lottie.xcassets */; };
+		3D2853C1280A5401006CA6A2 /* Lottie.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D2853BF280A5401006CA6A2 /* Lottie.xcassets */; };
+		3D2853C3280B09C0006CA6A2 /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2853C2280B09C0006CA6A2 /* ScanView.swift */; };
+		3D2853C4280B09C0006CA6A2 /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2853C2280B09C0006CA6A2 /* ScanView.swift */; };
 		3D73F24C27FD44D3005893A8 /* CompostIntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D73F24B27FD44D3005893A8 /* CompostIntroView.swift */; };
 		3D73F24D27FD44D3005893A8 /* CompostIntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D73F24B27FD44D3005893A8 /* CompostIntroView.swift */; };
 		3D9FA7D927FFB883007B107E /* Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9FA7D827FFB883007B107E /* Feature.swift */; };
 		3D9FA7DA27FFB883007B107E /* Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9FA7D827FFB883007B107E /* Feature.swift */; };
+		3DCECFA12803361200F3C3AB /* EWasteMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCECFA02803361100F3C3AB /* EWasteMapView.swift */; };
+		3DCECFA22803361200F3C3AB /* EWasteMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCECFA02803361100F3C3AB /* EWasteMapView.swift */; };
+		3DD859492803659100A862DA /* ARControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD859482803659100A862DA /* ARControlView.swift */; };
+		3DD8594A2803659100A862DA /* ARControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD859482803659100A862DA /* ARControlView.swift */; };
+		3DD8594C28038D0E00A862DA /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD8594B28038D0E00A862DA /* Location.swift */; };
+		3DD8594D28038D0E00A862DA /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD8594B28038D0E00A862DA /* Location.swift */; };
+		3DD8595728038E6A00A862DA /* LocationsDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD8595628038E6A00A862DA /* LocationsDataService.swift */; };
+		3DD8595828038E6A00A862DA /* LocationsDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD8595628038E6A00A862DA /* LocationsDataService.swift */; };
+		3DD8595A28038F1200A862DA /* LocationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD8595928038F1200A862DA /* LocationsView.swift */; };
+		3DD8595B28038F1200A862DA /* LocationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD8595928038F1200A862DA /* LocationsView.swift */; };
+		3DD8595D280392F500A862DA /* LocationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD8595C280392F500A862DA /* LocationsViewModel.swift */; };
+		3DD8595E280392F500A862DA /* LocationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD8595C280392F500A862DA /* LocationsViewModel.swift */; };
+		3DD859612803ABE200A862DA /* LocationsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD859602803ABE100A862DA /* LocationsListView.swift */; };
+		3DD859622803ABE200A862DA /* LocationsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD859602803ABE100A862DA /* LocationsListView.swift */; };
+		3DD859642803C0EC00A862DA /* LocationPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD859632803C0EC00A862DA /* LocationPreviewView.swift */; };
+		3DD859652803C0EC00A862DA /* LocationPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD859632803C0EC00A862DA /* LocationPreviewView.swift */; };
+		3DD859672803D11B00A862DA /* LocationMapAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD859662803D11A00A862DA /* LocationMapAnnotationView.swift */; };
+		3DD859682803D11B00A862DA /* LocationMapAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD859662803D11A00A862DA /* LocationMapAnnotationView.swift */; };
 		3DDE155D2800FA51001F83E4 /* FeatureItemMP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDE155C2800FA51001F83E4 /* FeatureItemMP.swift */; };
 		3DDE155E2800FA51001F83E4 /* FeatureItemMP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDE155C2800FA51001F83E4 /* FeatureItemMP.swift */; };
 		3DDE156028011C36001F83E4 /* ScanABinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDE155F28011C36001F83E4 /* ScanABinView.swift */; };
@@ -129,8 +154,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D2853BC280A51A9006CA6A2 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		3D2853BF280A5401006CA6A2 /* Lottie.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Lottie.xcassets; sourceTree = "<group>"; };
+		3D2853C2280B09C0006CA6A2 /* ScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanView.swift; sourceTree = "<group>"; };
 		3D73F24B27FD44D3005893A8 /* CompostIntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompostIntroView.swift; sourceTree = "<group>"; };
 		3D9FA7D827FFB883007B107E /* Feature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature.swift; sourceTree = "<group>"; };
+		3DCECFA02803361100F3C3AB /* EWasteMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EWasteMapView.swift; sourceTree = "<group>"; };
+		3DD859482803659100A862DA /* ARControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARControlView.swift; sourceTree = "<group>"; };
+		3DD8594B28038D0E00A862DA /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		3DD8595628038E6A00A862DA /* LocationsDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LocationsDataService.swift; path = "../../../../../Downloads/SwiftfulMapApp-Downloads/LocationsDataService.swift"; sourceTree = "<group>"; };
+		3DD8595928038F1200A862DA /* LocationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsView.swift; sourceTree = "<group>"; };
+		3DD8595C280392F500A862DA /* LocationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewModel.swift; sourceTree = "<group>"; };
+		3DD859602803ABE100A862DA /* LocationsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsListView.swift; sourceTree = "<group>"; };
+		3DD859632803C0EC00A862DA /* LocationPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPreviewView.swift; sourceTree = "<group>"; };
+		3DD859662803D11A00A862DA /* LocationMapAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMapAnnotationView.swift; sourceTree = "<group>"; };
 		3DDE155C2800FA51001F83E4 /* FeatureItemMP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureItemMP.swift; sourceTree = "<group>"; };
 		3DDE155F28011C36001F83E4 /* ScanABinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanABinView.swift; sourceTree = "<group>"; };
 		9637E12226C479C400DEF71D /* CourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseView.swift; sourceTree = "<group>"; };
@@ -192,6 +229,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D2853BB280A513B006CA6A2 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,11 +257,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3DD8595528038E5000A862DA /* DataServices */ = {
+			isa = PBXGroup;
+			children = (
+				3DD8595F2803932A00A862DA /* ViewModel */,
+				3DD8595628038E6A00A862DA /* LocationsDataService.swift */,
+				3D2853BC280A51A9006CA6A2 /* LottieView.swift */,
+			);
+			path = DataServices;
+			sourceTree = "<group>";
+		};
+		3DD8595F2803932A00A862DA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3DD8595C280392F500A862DA /* LocationsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		3DDE156228011C42001F83E4 /* Custom */ = {
 			isa = PBXGroup;
 			children = (
 				3D73F24B27FD44D3005893A8 /* CompostIntroView.swift */,
+				3DCECFA02803361100F3C3AB /* EWasteMapView.swift */,
 				3DDE155F28011C36001F83E4 /* ScanABinView.swift */,
+				3DD8595928038F1200A862DA /* LocationsView.swift */,
+				3DD859602803ABE100A862DA /* LocationsListView.swift */,
+				3DD859632803C0EC00A862DA /* LocationPreviewView.swift */,
+				3DD859662803D11A00A862DA /* LocationMapAnnotationView.swift */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
@@ -242,12 +303,14 @@
 			isa = PBXGroup;
 			children = (
 				967ED6BE267A767C005B2358 /* iOS15App.swift */,
+				3DD8595528038E5000A862DA /* DataServices */,
 				969FAAFD2684F7A0007D1C4C /* Navigation */,
 				969FAAFC2684F795007D1C4C /* Views */,
 				969FAAFE2684F7BA007D1C4C /* Components */,
 				969FAAFF2684F7C9007D1C4C /* Model */,
 				96C7696E26BB15D500FA23E9 /* Styles */,
 				967ED6C0267A767D005B2358 /* Assets.xcassets */,
+				3D2853BF280A5401006CA6A2 /* Lottie.xcassets */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -323,6 +386,7 @@
 				96775C5126CDAAFB007B83B2 /* Tab.swift */,
 				968B4E3926BC378300B4E70B /* PreferenceKey.swift */,
 				96C969892704B27200CCAC27 /* Update.swift */,
+				3DD8594B28038D0E00A862DA /* Location.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -334,6 +398,7 @@
 				96C7696F26BB164100FA23E9 /* ExploreView.swift */,
 				96A4AB3F26BC81E4008642CE /* NotificationsView.swift */,
 				96A4AB4B26BDC598008642CE /* LibraryView.swift */,
+				3D2853C2280B09C0006CA6A2 /* ScanView.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -346,6 +411,7 @@
 				969FAAEA268388EB007D1C4C /* SearchView.swift */,
 				96ADB4A726E26BEF00301E48 /* AccountView.swift */,
 				96C8E28726B05EE200BBA0DD /* SigninView.swift */,
+				3DD859482803659100A862DA /* ARControlView.swift */,
 			);
 			path = Modals;
 			sourceTree = "<group>";
@@ -425,6 +491,9 @@
 			dependencies = (
 			);
 			name = "iOS15 (iOS)";
+			packageProductDependencies = (
+				3D2853BA280A513B006CA6A2 /* Lottie */,
+			);
 			productName = "iOS15 (iOS)";
 			productReference = 967ED6C5267A767D005B2358 /* DesignCode.app */;
 			productType = "com.apple.product-type.application";
@@ -517,6 +586,9 @@
 				Base,
 			);
 			mainGroup = 967ED6B8267A767C005B2358;
+			packageReferences = (
+				3D2853B9280A513B006CA6A2 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = 967ED6C6267A767D005B2358 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -534,6 +606,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D2853C0280A5401006CA6A2 /* Lottie.xcassets in Resources */,
 				967ED6E4267A767D005B2358 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -542,6 +615,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D2853C1280A5401006CA6A2 /* Lottie.xcassets in Resources */,
 				967ED6E5267A767D005B2358 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -569,17 +643,22 @@
 			files = (
 				968B4E4926BC70EB00B4E70B /* HandbookItem.swift in Sources */,
 				96692670269F28DD0041C3EF /* LogoView.swift in Sources */,
+				3DCECFA12803361200F3C3AB /* EWasteMapView.swift in Sources */,
 				968B4E4626BC67F900B4E70B /* Topic.swift in Sources */,
 				968B4E4026BC666800B4E70B /* ListRow.swift in Sources */,
 				9637E12626C47B5200DEF71D /* SectionView.swift in Sources */,
 				96A4AB4F26BDCADA008642CE /* CertificateView.swift in Sources */,
 				968B4E3D26BC5B0F00B4E70B /* TextModifiers.swift in Sources */,
 				96C8E28826B05EE200BBA0DD /* SigninView.swift in Sources */,
+				3DD859672803D11B00A862DA /* LocationMapAnnotationView.swift in Sources */,
 				969FAAEB268388EB007D1C4C /* SearchView.swift in Sources */,
 				969FAB012684FAA4007D1C4C /* Modifiers.swift in Sources */,
+				3D2853BD280A51A9006CA6A2 /* LottieView.swift in Sources */,
 				96A4AB4926BD7746008642CE /* CircularView.swift in Sources */,
 				96C7695726B9812E00FA23E9 /* AngularButton.swift in Sources */,
 				96C9698A2704B27200CCAC27 /* Update.swift in Sources */,
+				3DD859492803659100A862DA /* ARControlView.swift in Sources */,
+				3D2853C3280B09C0006CA6A2 /* ScanView.swift in Sources */,
 				96A4AB4326BC8703008642CE /* CourseSection.swift in Sources */,
 				3D9FA7D927FFB883007B107E /* Feature.swift in Sources */,
 				96775C5226CDAAFB007B83B2 /* Tab.swift in Sources */,
@@ -593,9 +672,15 @@
 				967ED6E2267A767D005B2358 /* ContentView.swift in Sources */,
 				965C78AB26CD502400E788C2 /* ColorExtension.swift in Sources */,
 				968B4E4C26BC758C00B4E70B /* Handbook.swift in Sources */,
+				3DD859642803C0EC00A862DA /* LocationPreviewView.swift in Sources */,
+				3DD8595828038E6A00A862DA /* LocationsDataService.swift in Sources */,
+				3DD859612803ABE200A862DA /* LocationsListView.swift in Sources */,
+				3DD8595D280392F500A862DA /* LocationsViewModel.swift in Sources */,
 				3DDE155D2800FA51001F83E4 /* FeatureItemMP.swift in Sources */,
 				96A4AB4026BC81E4008642CE /* NotificationsView.swift in Sources */,
+				3DD8594C28038D0E00A862DA /* Location.swift in Sources */,
 				96C9698126FB7BED00CCAC27 /* HexagonView.swift in Sources */,
+				3DD8595A28038F1200A862DA /* LocationsView.swift in Sources */,
 				96B265A626A8A5FB00A7340D /* FeaturedItem.swift in Sources */,
 				96A4AB4C26BDC598008642CE /* LibraryView.swift in Sources */,
 				969FAAE8268296D7007D1C4C /* Wave.swift in Sources */,
@@ -625,17 +710,22 @@
 			files = (
 				968B4E4A26BC70EB00B4E70B /* HandbookItem.swift in Sources */,
 				96692671269F28DD0041C3EF /* LogoView.swift in Sources */,
+				3DCECFA22803361200F3C3AB /* EWasteMapView.swift in Sources */,
 				968B4E4726BC67F900B4E70B /* Topic.swift in Sources */,
 				968B4E4126BC666800B4E70B /* ListRow.swift in Sources */,
 				9637E12726C47B5200DEF71D /* SectionView.swift in Sources */,
 				96A4AB5026BDCADA008642CE /* CertificateView.swift in Sources */,
 				968B4E3E26BC5B0F00B4E70B /* TextModifiers.swift in Sources */,
 				96C8E28926B05EE200BBA0DD /* SigninView.swift in Sources */,
+				3DD859682803D11B00A862DA /* LocationMapAnnotationView.swift in Sources */,
 				969FAAEC268388EB007D1C4C /* SearchView.swift in Sources */,
 				969FAB022684FAA4007D1C4C /* Modifiers.swift in Sources */,
+				3D2853BE280A51A9006CA6A2 /* LottieView.swift in Sources */,
 				96A4AB4A26BD7746008642CE /* CircularView.swift in Sources */,
 				96C7695826B9812E00FA23E9 /* AngularButton.swift in Sources */,
 				96C9698B2704B27200CCAC27 /* Update.swift in Sources */,
+				3DD8594A2803659100A862DA /* ARControlView.swift in Sources */,
+				3D2853C4280B09C0006CA6A2 /* ScanView.swift in Sources */,
 				96A4AB4426BC8703008642CE /* CourseSection.swift in Sources */,
 				3D9FA7DA27FFB883007B107E /* Feature.swift in Sources */,
 				96775C5326CDAAFB007B83B2 /* Tab.swift in Sources */,
@@ -649,9 +739,15 @@
 				967ED6E3267A767D005B2358 /* ContentView.swift in Sources */,
 				965C78AC26CD502400E788C2 /* ColorExtension.swift in Sources */,
 				968B4E4D26BC758C00B4E70B /* Handbook.swift in Sources */,
+				3DD859652803C0EC00A862DA /* LocationPreviewView.swift in Sources */,
+				3DD8595728038E6A00A862DA /* LocationsDataService.swift in Sources */,
+				3DD859622803ABE200A862DA /* LocationsListView.swift in Sources */,
+				3DD8595E280392F500A862DA /* LocationsViewModel.swift in Sources */,
 				3DDE155E2800FA51001F83E4 /* FeatureItemMP.swift in Sources */,
 				96A4AB4126BC81E4008642CE /* NotificationsView.swift in Sources */,
+				3DD8594D28038D0E00A862DA /* Location.swift in Sources */,
 				96C9698226FB7BED00CCAC27 /* HexagonView.swift in Sources */,
+				3DD8595B28038F1200A862DA /* LocationsView.swift in Sources */,
 				96B265A726A8A5FB00A7340D /* FeaturedItem.swift in Sources */,
 				96A4AB4D26BDC598008642CE /* LibraryView.swift in Sources */,
 				969FAAE9268296D7007D1C4C /* Wave.swift in Sources */,
@@ -825,12 +921,16 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = 4HCH822N6B;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Allow camera usage for AR Capabilites you sexy beast ;)";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -855,12 +955,16 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = 4HCH822N6B;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Allow camera usage for AR Capabilites you sexy beast ;)";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -1089,6 +1193,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3D2853B9280A513B006CA6A2 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3D2853BA280A513B006CA6A2 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3D2853B9280A513B006CA6A2 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 967ED6B9267A767C005B2358 /* Project object */;
 }

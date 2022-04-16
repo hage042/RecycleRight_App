@@ -38,6 +38,7 @@ struct HomeView: View {
                     
                 TabView{
                     scanabin
+                    ewastemap
                     compostintro
                 }
                 .tabViewStyle(.page(indexDisplayMode: .never))
@@ -108,7 +109,7 @@ struct HomeView: View {
     var compostintro: some View {
         TabView{
             GeometryReader { proxy in
-                var feature = mainfeature[1]
+                let feature = mainfeature[1]
                 FeatureItemMP(feature: feature)
                     .cornerRadius(30)
                     .modifier(OutlineModifier(cornerRadius: 30))
@@ -120,11 +121,10 @@ struct HomeView: View {
                             radius: 30, x: 0, y: 30)
                     .blur(radius: abs(proxy.frame(in: .global).minX) / 40)
                     .overlay(
-                        Image(feature.image)//course.image)
-                            .resizable()
+                        LottieView(filename: "compostLogoSpin")
                             .aspectRatio(contentMode: .fit)
                             .offset(x: 32, y: -80)
-                            .frame(height: 210)
+                            .frame(height: 230)
                             .offset(x: proxy.frame(in: .global).minX / 2)
                     )
                     .padding(20)
@@ -146,7 +146,7 @@ struct HomeView: View {
     var scanabin: some View {
         TabView{
             GeometryReader { proxy in
-                var feature = mainfeature[0]
+                let feature = mainfeature[0]
                 FeatureItemMP(feature: feature)
                     .cornerRadius(30)
                     .modifier(OutlineModifier(cornerRadius: 30))
@@ -158,11 +158,18 @@ struct HomeView: View {
                             radius: 30, x: 0, y: 30)
                     .blur(radius: abs(proxy.frame(in: .global).minX) / 40)
                     .overlay(
-                        Image(feature.image)//course.image)
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
+                        LottieView(filename: "trashbin")
+                            .aspectRatio(contentMode: .fill)
                             .offset(x: 32, y: -80)
-                            .frame(height: 150)
+                            .frame(height: 250)
+                            .offset(x: proxy.frame(in: .global).minX / 2)
+                    )
+                    .padding(20)
+                    .overlay(
+                        LottieView(filename: "scannerAnimationWhiteFull")
+                            .aspectRatio(contentMode: .fit)
+                            .offset(x: 32, y: -60)
+                            .frame(height: 180)
                             .offset(x: proxy.frame(in: .global).minX / 2)
                     )
                     .padding(20)
@@ -180,6 +187,54 @@ struct HomeView: View {
             ScanABinView(namespace: namespace, course: $selectedCourse, isAnimated: false)
         }
     }
+    
+    var ewastemap: some View {
+        TabView{
+            GeometryReader { proxy in
+                let feature = mainfeature[2]
+                FeatureItemMP(feature: feature)
+                    .cornerRadius(30)
+                    .modifier(OutlineModifier(cornerRadius: 30))
+                    .rotation3DEffect(
+                        .degrees(proxy.frame(in: .global).minX / -10),
+                        axis: (x: 0, y: 1, z: 0), perspective: 1
+                    )
+                    .shadow(color: Color("Shadow").opacity(0.3),
+                            radius: 30, x: 0, y: 30)
+                    .blur(radius: abs(proxy.frame(in: .global).minX) / 40)
+                    .overlay(
+                        /*
+                        Image(feature.image)//course.image)
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .offset(x: 32, y: -80)
+                            .frame(height: 230)
+                            .offset(x: proxy.frame(in: .global).minX / 2)
+                         */
+                        LottieView(filename: "mapWithPins")
+                            .aspectRatio(contentMode: .fill)
+                            .offset(x: 32, y: -80)
+                            .frame(height: 250)
+                            .offset(x: proxy.frame(in: .global).minX / 2)
+                    )
+                    .padding(20)
+                    .onTapGesture {
+                        showCourse = true
+                        selectedFeature = feature
+                    }
+                    .accessibilityElement(children: .combine)
+                    .accessibilityAddTraits(.isButton)
+            }
+        }
+        .tabViewStyle(.page(indexDisplayMode: .never))
+        .frame(height: 460)
+        .sheet(isPresented: $showCourse) {
+            LocationsView()
+                .environmentObject(LocationsViewModel())
+            //EWasteMapView(namespace: namespace, course: $selectedCourse, isAnimated: false)
+        }
+    }
+    
     
     
     /*

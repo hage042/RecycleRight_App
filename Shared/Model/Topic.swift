@@ -14,7 +14,7 @@ struct Topic: Identifiable {
 }
 
 var topics = [
-    Topic(title: "iOS Development", icon: "iphone"),
-    Topic(title: "UI Design", icon: "eyedropper"),
-    Topic(title: "Web development", icon: "laptopcomputer")
+    Topic(title: "Environmental News", icon: "iphone"),
+    Topic(title: "Events Near You", icon: "eyedropper"),
+    Topic(title: "Recycling Day Instructions", icon: "laptopcomputer")
 ]

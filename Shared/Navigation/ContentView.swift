@@ -25,7 +25,7 @@ struct ContentView: View {
                 case .explore:
                     ExploreView()
                 case .notifications:
-                    NotificationsView()
+                    ScanView()//NotificationsView()
                 case .library:
                     LibraryView()
                 }

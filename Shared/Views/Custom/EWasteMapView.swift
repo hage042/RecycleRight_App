@@ -1,50 +1,37 @@
 //
-//  ScanABinView.swift
+//  EWasteMapView.swift
 //  RecycleRight
 //
-//  Created by Danny Hagenlocker on 4/8/22.
+//  Created by Danny Hagenlocker on 4/10/22.
 //
 
 import SwiftUI
-import RealityKit
 
-struct ScanABinView: View {
+
+
+struct EWasteMapView: View {
+    
+    @EnvironmentObject private var vm: LocationsViewModel
+    
     
     var namespace: Namespace.ID
     @Binding var course: Course
     var isAnimated = true
-    
+
     @State var viewState: CGSize = .zero
     @State var showSection = false
     @State var appear = [false, false, false]
     //@State var selectedSection = courseSections[0]
-    
+
     @EnvironmentObject var model: Model
     @Environment(\.horizontalSizeClass) var horizontalSizeClass
     @Environment(\.presentationMode) var presentationMode
     
     var body: some View {
         ZStack {
-            ARViewContainer()
-                .coordinateSpace(name: "scroll")
-                .background(Color("Green"))
-                .mask(RoundedRectangle(cornerRadius: appear[0] ? 0 : 30))
-                .mask(RoundedRectangle(cornerRadius: viewState.width / 3))
-                .modifier(OutlineModifier(cornerRadius: viewState.width / 3))
-                .shadow(color: Color("Green").opacity(0.5), radius: 30, x: 0, y: 10)
-                .scaleEffect(-viewState.width/500 + 1)
-                .background(Color("Green").opacity(viewState.width / 500))
-                .background(.ultraThinMaterial)
-                .gesture(isAnimated ? drag : nil)
-                .ignoresSafeArea()
-            
-            ARControlView()
-
-            /*
             ScrollView {
-                //ARViewContainer()
-                
-                //ar
+                LocationsView()
+                    .environmentObject(vm)
                 //cover
                 //sectionsSection
                     //.opacity(appear[2] ? 1 : 0)
@@ -60,7 +47,7 @@ struct ScanABinView: View {
             .background(.ultraThinMaterial)
             .gesture(isAnimated ? drag : nil)
             .ignoresSafeArea()
-            */
+            
             Button {
                 isAnimated ?
                 withAnimation(.closeCard) {
@@ -88,14 +75,22 @@ struct ScanABinView: View {
            fadeOut()
         }
     }
-    
+
     var cover: some View {
         GeometryReader { proxy in
             let scrollY = proxy.frame(in: .named("scroll")).minY
             
             VStack {
                 /*
-                SPACE TO ADD ARRRR
+                
+                
+                
+                
+                
+                SPACE TO ADD MAP
+                
+                
+                
                 */
                 //Spacer()
             }
@@ -107,23 +102,8 @@ struct ScanABinView: View {
                     .offset(y: scrollY > 0 ? -scrollY : 0)
             )
         }
-        .frame(maxHeight: .infinity)
-    }   //maybe use later as a intructions guid
-    
-    
-    struct ARViewContainer: UIViewRepresentable {
-        func makeUIView(context: Context) -> ARView {
-            let arView = ARView(frame: .zero)
-            return arView
-        }
-        
-        func updateUIView(_ uiView: ARView, context: Context) {
-            
-        }
+        .frame(height: 500)
     }
-    
-    
-    
     
     func close() {
         withAnimation {
@@ -182,10 +162,9 @@ struct ScanABinView: View {
     }
 }
 /*
-struct ScanABinView_Previews: PreviewProvider {
+struct EWasteMapView_Previews: PreviewProvider {
     static var previews: some View {
-        ScanABinView(namespace: namespace, course: .constant(courses[0]))
-            .environmentObject(Model())
+        EWasteMapView()
     }
 }
 */
