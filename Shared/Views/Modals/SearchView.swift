@@ -67,7 +67,7 @@ struct SearchView: View {
                 .accessibility(hidden: true)
         )
         .sheet(isPresented: $showCourse) {
-            CourseView(namespace: namespace, course: $selectedCourse, isAnimated: false)
+            CourseView(namespace: namespace, selectedMaterial: plasticCourse, course: $selectedCourse, isAnimated: false)
         }
     }
     

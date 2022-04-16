@@ -14,6 +14,7 @@ struct HomeView: View {
     @State var showStatusBar = true
     @State var showCourse = false
     @State var selectedCourse: Course = courses[0]
+    @State var selectedFeature: FeatureComp = mainfeature[0]
     @State var contentHasScrolled = false
     
     @EnvironmentObject var model: Model
@@ -34,9 +35,23 @@ struct HomeView: View {
                     .frame(width: 100, height: 72)
                     .opacity(0)
                 
-                featured
+                    
+                TabView{
+                    scanabin
+                    ewastemap
+                    compostintro
+                }
+                .tabViewStyle(.page(indexDisplayMode: .never))
+                .frame(height: 460)
+                .background(
+                    Image("Blob 1")
+                        .offset(x: 250, y: -100)
+                        .accessibility(hidden: true)
+                )
                 
-                Text("Courses".uppercased())
+                //featured
+                
+                Text("Recycleable Info".uppercased())
                     .sectionTitleModifier()
                     .offset(y: -80)
                     .accessibilityAddTraits(.isHeader)
@@ -78,7 +93,7 @@ struct HomeView: View {
     var detail: some View {
         ForEach(featuredCourses) { course in
             if course.index == model.selectedCourse {
-                CourseView(namespace: namespace, course: .constant(course))
+                CourseView(namespace: namespace, selectedMaterial: course.selectedMaterial, course: .constant(course))
             }
         }
     }
@@ -91,6 +106,138 @@ struct HomeView: View {
         }
     }
     
+    var compostintro: some View {
+        TabView{
+            GeometryReader { proxy in
+                let feature = mainfeature[1]
+                FeatureItemMP(feature: feature)
+                    .cornerRadius(30)
+                    .modifier(OutlineModifier(cornerRadius: 30))
+                    .rotation3DEffect(
+                        .degrees(proxy.frame(in: .global).minX / -10),
+                        axis: (x: 0, y: 1, z: 0), perspective: 1
+                    )
+                    .shadow(color: Color("Shadow").opacity(0.3),
+                            radius: 30, x: 0, y: 30)
+                    .blur(radius: abs(proxy.frame(in: .global).minX) / 40)
+                    .overlay(
+                        LottieView(filename: "compostLogoSpin")
+                            .aspectRatio(contentMode: .fit)
+                            .offset(x: 32, y: -80)
+                            .frame(height: 230)
+                            .offset(x: proxy.frame(in: .global).minX / 2)
+                    )
+                    .padding(20)
+                    .onTapGesture {
+                        showCourse = true
+                        selectedFeature = feature
+                    }
+                    .accessibilityElement(children: .combine)
+                    .accessibilityAddTraits(.isButton)
+            }
+        }
+        .tabViewStyle(.page(indexDisplayMode: .never))
+        .frame(height: 460)
+        .sheet(isPresented: $showCourse) {
+            CompostIntroView(namespace: namespace, course: $selectedCourse, isAnimated: false)
+        }
+    }
+    
+    var scanabin: some View {
+        TabView{
+            GeometryReader { proxy in
+                let feature = mainfeature[0]
+                FeatureItemMP(feature: feature)
+                    .cornerRadius(30)
+                    .modifier(OutlineModifier(cornerRadius: 30))
+                    .rotation3DEffect(
+                        .degrees(proxy.frame(in: .global).minX / -10),
+                        axis: (x: 0, y: 1, z: 0), perspective: 1
+                    )
+                    .shadow(color: Color("Shadow").opacity(0.3),
+                            radius: 30, x: 0, y: 30)
+                    .blur(radius: abs(proxy.frame(in: .global).minX) / 40)
+                    .overlay(
+                        LottieView(filename: "trashbin")
+                            .aspectRatio(contentMode: .fill)
+                            .offset(x: 32, y: -80)
+                            .frame(height: 250)
+                            .offset(x: proxy.frame(in: .global).minX / 2)
+                    )
+                    .padding(20)
+                    .overlay(
+                        LottieView(filename: "scannerAnimationWhiteFull")
+                            .aspectRatio(contentMode: .fit)
+                            .offset(x: 32, y: -60)
+                            .frame(height: 180)
+                            .offset(x: proxy.frame(in: .global).minX / 2)
+                    )
+                    .padding(20)
+                    .onTapGesture {
+                        showCourse = true
+                        selectedFeature = feature
+                    }
+                    .accessibilityElement(children: .combine)
+                    .accessibilityAddTraits(.isButton)
+            }
+        }
+        .tabViewStyle(.page(indexDisplayMode: .never))
+        .frame(height: 460)
+        .sheet(isPresented: $showCourse) {
+            ScanABinView(namespace: namespace, course: $selectedCourse, isAnimated: false)
+        }
+    }
+    
+    var ewastemap: some View {
+        TabView{
+            GeometryReader { proxy in
+                let feature = mainfeature[2]
+                FeatureItemMP(feature: feature)
+                    .cornerRadius(30)
+                    .modifier(OutlineModifier(cornerRadius: 30))
+                    .rotation3DEffect(
+                        .degrees(proxy.frame(in: .global).minX / -10),
+                        axis: (x: 0, y: 1, z: 0), perspective: 1
+                    )
+                    .shadow(color: Color("Shadow").opacity(0.3),
+                            radius: 30, x: 0, y: 30)
+                    .blur(radius: abs(proxy.frame(in: .global).minX) / 40)
+                    .overlay(
+                        /*
+                        Image(feature.image)//course.image)
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .offset(x: 32, y: -80)
+                            .frame(height: 230)
+                            .offset(x: proxy.frame(in: .global).minX / 2)
+                         */
+                        LottieView(filename: "mapWithPins")
+                            .aspectRatio(contentMode: .fill)
+                            .offset(x: 32, y: -80)
+                            .frame(height: 250)
+                            .offset(x: proxy.frame(in: .global).minX / 2)
+                    )
+                    .padding(20)
+                    .onTapGesture {
+                        showCourse = true
+                        selectedFeature = feature
+                    }
+                    .accessibilityElement(children: .combine)
+                    .accessibilityAddTraits(.isButton)
+            }
+        }
+        .tabViewStyle(.page(indexDisplayMode: .never))
+        .frame(height: 460)
+        .sheet(isPresented: $showCourse) {
+            LocationsView()
+                .environmentObject(LocationsViewModel())
+            //EWasteMapView(namespace: namespace, course: $selectedCourse, isAnimated: false)
+        }
+    }
+    
+    
+    
+    /*
     var featured: some View {
         TabView {
             ForEach(courses) { course in
@@ -129,11 +276,13 @@ struct HomeView: View {
             Image("Blob 1")
                 .offset(x: 250, y: -100)
                 .accessibility(hidden: true)
+            
         )
         .sheet(isPresented: $showCourse) {
             CourseView(namespace: namespace, course: $selectedCourse, isAnimated: false)
         }
     }
+    */
     
     var scrollDetection: some View {
         GeometryReader { proxy in
