@@ -16,7 +16,7 @@ struct Sidebar: View {
                 Label("Livestreams", systemImage: "tv")
             }
             .listStyle(.sidebar)
-            .navigationTitle("DesignCode")
+            .navigationTitle("RecycleRight")
         }
     }
 }

@@ -46,9 +46,9 @@ struct FeaturedItem: View {
 struct FeaturedItem_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            FeaturedItem(course: courses[0])
-            FeaturedItem(course: courses[0])
-                .environment(\.sizeCategory, .accessibilityLarge)
+            //FeaturedItem(course: courses[0])
+            //FeaturedItem(course: courses[0])
+                //.environment(\.sizeCategory, .accessibilityLarge)
         }
     }
 }

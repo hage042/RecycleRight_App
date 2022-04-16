@@ -34,9 +34,13 @@ struct LibraryView: View {
                 cardsSection
                 
                 menuSection
-                    .padding(.bottom, 50)
+                    //.padding(.bottom, 50)
             }
             .offset(y: -30)
+            
+            sectionsSection
+                .padding(.vertical, 30)
+                .padding(.bottom, 30)
         }
         .coordinateSpace(name: "scroll")
         .overlay(NavigationBar(title: "Library", contentHasScrolled: $contentHasScrolled))
@@ -84,6 +88,21 @@ struct LibraryView: View {
                     .offset(y: -40)
             )
             .padding(20)
+    }
+    
+    var sectionsSection: some View {
+        VStack(spacing: 16) {
+            ForEach(Array(courseSections.enumerated()), id: \.offset) { index, section in
+                SectionRow(section: section)
+                if index != courseSections.count - 1 {
+                    Divider()
+                }
+            }
+        }
+        .padding(20)
+        .background(.ultraThinMaterial)
+        .backgroundStyle(cornerRadius: 30)
+        .padding(.horizontal, 20)
     }
     
     var scrollDetection: some View {
