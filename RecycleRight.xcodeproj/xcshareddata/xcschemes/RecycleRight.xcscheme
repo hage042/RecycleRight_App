@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "967ED6C4267A767D005B2358"
-               BuildableName = "DesignCode.app"
+               BuildableName = "RecycleRight.app"
                BlueprintName = "iOS15 (iOS)"
                ReferencedContainer = "container:RecycleRight.xcodeproj">
             </BuildableReference>
@@ -45,7 +45,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "967ED6C4267A767D005B2358"
-            BuildableName = "DesignCode.app"
+            BuildableName = "RecycleRight.app"
             BlueprintName = "iOS15 (iOS)"
             ReferencedContainer = "container:RecycleRight.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "967ED6C4267A767D005B2358"
-            BuildableName = "DesignCode.app"
+            BuildableName = "RecycleRight.app"
             BlueprintName = "iOS15 (iOS)"
             ReferencedContainer = "container:RecycleRight.xcodeproj">
          </BuildableReference>

@@ -24,8 +24,6 @@
 		3DD8594A2803659100A862DA /* ARControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD859482803659100A862DA /* ARControlView.swift */; };
 		3DD8594C28038D0E00A862DA /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD8594B28038D0E00A862DA /* Location.swift */; };
 		3DD8594D28038D0E00A862DA /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD8594B28038D0E00A862DA /* Location.swift */; };
-		3DD8595728038E6A00A862DA /* LocationsDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD8595628038E6A00A862DA /* LocationsDataService.swift */; };
-		3DD8595828038E6A00A862DA /* LocationsDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD8595628038E6A00A862DA /* LocationsDataService.swift */; };
 		3DD8595A28038F1200A862DA /* LocationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD8595928038F1200A862DA /* LocationsView.swift */; };
 		3DD8595B28038F1200A862DA /* LocationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD8595928038F1200A862DA /* LocationsView.swift */; };
 		3DD8595D280392F500A862DA /* LocationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD8595C280392F500A862DA /* LocationsViewModel.swift */; };
@@ -112,8 +110,6 @@
 		96ADB4A926E26BEF00301E48 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96ADB4A726E26BEF00301E48 /* AccountView.swift */; };
 		96B265A626A8A5FB00A7340D /* FeaturedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B265A526A8A5FB00A7340D /* FeaturedItem.swift */; };
 		96B265A726A8A5FB00A7340D /* FeaturedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B265A526A8A5FB00A7340D /* FeaturedItem.swift */; };
-		96C7695726B9812E00FA23E9 /* AngularButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C7695626B9812E00FA23E9 /* AngularButton.swift */; };
-		96C7695826B9812E00FA23E9 /* AngularButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C7695626B9812E00FA23E9 /* AngularButton.swift */; };
 		96C7696626B9C04900FA23E9 /* CustomFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C7696526B9C04900FA23E9 /* CustomFieldModifier.swift */; };
 		96C7696726B9C04900FA23E9 /* CustomFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C7696526B9C04900FA23E9 /* CustomFieldModifier.swift */; };
 		96C7696926B9F36200FA23E9 /* Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C7696826B9F36200FA23E9 /* Animations.swift */; };
@@ -134,6 +130,19 @@
 		96C9698826FB80C900CCAC27 /* AnimatedBlobView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C9698626FB80C900CCAC27 /* AnimatedBlobView.swift */; };
 		96C9698A2704B27200CCAC27 /* Update.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C969892704B27200CCAC27 /* Update.swift */; };
 		96C9698B2704B27200CCAC27 /* Update.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C969892704B27200CCAC27 /* Update.swift */; };
+		D3854483280C9B13007FAC83 /* AngularButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3854482280C9B13007FAC83 /* AngularButton.swift */; };
+		D3854484280C9B13007FAC83 /* AngularButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3854482280C9B13007FAC83 /* AngularButton.swift */; };
+		D3854486280C9B8D007FAC83 /* VoiceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3854485280C9B8D007FAC83 /* VoiceButton.swift */; };
+		D3854487280C9B8D007FAC83 /* VoiceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3854485280C9B8D007FAC83 /* VoiceButton.swift */; };
+		D385448A280CC2F8007FAC83 /* CameraView in Frameworks */ = {isa = PBXBuildFile; productRef = D3854489280CC2F8007FAC83 /* CameraView */; };
+		D385448C280CC505007FAC83 /* CameraViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D385448B280CC505007FAC83 /* CameraViewDelegate.swift */; };
+		D385448D280CC505007FAC83 /* CameraViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D385448B280CC505007FAC83 /* CameraViewDelegate.swift */; };
+		D3854490280CCE87007FAC83 /* LabelButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D385448F280CCE87007FAC83 /* LabelButton.swift */; };
+		D3854491280CCE87007FAC83 /* LabelButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D385448F280CCE87007FAC83 /* LabelButton.swift */; };
+		D3854493280CDAA8007FAC83 /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = D3854492280CDAA8007FAC83 /* Resnet50.mlmodel */; };
+		D3854494280CDAA9007FAC83 /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = D3854492280CDAA8007FAC83 /* Resnet50.mlmodel */; };
+		D3D4269C280B3D2B00270EFA /* LocationsDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D4269B280B3D2B00270EFA /* LocationsDataService.swift */; };
+		D3D4269D280B3D2B00270EFA /* LocationsDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D4269B280B3D2B00270EFA /* LocationsDataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -162,7 +171,6 @@
 		3DCECFA02803361100F3C3AB /* EWasteMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EWasteMapView.swift; sourceTree = "<group>"; };
 		3DD859482803659100A862DA /* ARControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARControlView.swift; sourceTree = "<group>"; };
 		3DD8594B28038D0E00A862DA /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
-		3DD8595628038E6A00A862DA /* LocationsDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LocationsDataService.swift; path = "../../../../../Downloads/SwiftfulMapApp-Downloads/LocationsDataService.swift"; sourceTree = "<group>"; };
 		3DD8595928038F1200A862DA /* LocationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsView.swift; sourceTree = "<group>"; };
 		3DD8595C280392F500A862DA /* LocationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewModel.swift; sourceTree = "<group>"; };
 		3DD859602803ABE100A862DA /* LocationsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsListView.swift; sourceTree = "<group>"; };
@@ -185,7 +193,7 @@
 		967ED6BE267A767C005B2358 /* iOS15App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS15App.swift; sourceTree = "<group>"; };
 		967ED6BF267A767C005B2358 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		967ED6C0267A767D005B2358 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		967ED6C5267A767D005B2358 /* DesignCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		967ED6C5267A767D005B2358 /* RecycleRight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecycleRight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		967ED6CB267A767D005B2358 /* iOS15.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS15.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		967ED6D0267A767D005B2358 /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		967ED6D4267A767D005B2358 /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
@@ -211,7 +219,6 @@
 		96A4AB4E26BDCADA008642CE /* CertificateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertificateView.swift; sourceTree = "<group>"; };
 		96ADB4A726E26BEF00301E48 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		96B265A526A8A5FB00A7340D /* FeaturedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedItem.swift; sourceTree = "<group>"; };
-		96C7695626B9812E00FA23E9 /* AngularButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AngularButton.swift; sourceTree = "<group>"; };
 		96C7696526B9C04900FA23E9 /* CustomFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFieldModifier.swift; sourceTree = "<group>"; };
 		96C7696826B9F36200FA23E9 /* Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animations.swift; sourceTree = "<group>"; };
 		96C7696B26B9F37200FA23E9 /* AnimatableFontModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatableFontModifier.swift; sourceTree = "<group>"; };
@@ -222,6 +229,13 @@
 		96C9698026FB7BED00CCAC27 /* HexagonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexagonView.swift; sourceTree = "<group>"; };
 		96C9698626FB80C900CCAC27 /* AnimatedBlobView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedBlobView.swift; sourceTree = "<group>"; };
 		96C969892704B27200CCAC27 /* Update.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Update.swift; sourceTree = "<group>"; };
+		D3854482280C9B13007FAC83 /* AngularButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AngularButton.swift; sourceTree = "<group>"; };
+		D3854485280C9B8D007FAC83 /* VoiceButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceButton.swift; sourceTree = "<group>"; };
+		D385448B280CC505007FAC83 /* CameraViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewDelegate.swift; sourceTree = "<group>"; };
+		D385448E280CCB69007FAC83 /* iOS15--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "iOS15--iOS--Info.plist"; sourceTree = "<group>"; };
+		D385448F280CCE87007FAC83 /* LabelButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelButton.swift; sourceTree = "<group>"; };
+		D3854492280CDAA8007FAC83 /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = Resnet50.mlmodel; path = ../../../../../Downloads/Resnet50.mlmodel; sourceTree = "<group>"; };
+		D3D4269B280B3D2B00270EFA /* LocationsDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsDataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,6 +243,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D385448A280CC2F8007FAC83 /* CameraView in Frameworks */,
 				3D2853BB280A513B006CA6A2 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,8 +275,9 @@
 		3DD8595528038E5000A862DA /* DataServices */ = {
 			isa = PBXGroup;
 			children = (
+				D3854492280CDAA8007FAC83 /* Resnet50.mlmodel */,
 				3DD8595F2803932A00A862DA /* ViewModel */,
-				3DD8595628038E6A00A862DA /* LocationsDataService.swift */,
+				D3D4269B280B3D2B00270EFA /* LocationsDataService.swift */,
 				3D2853BC280A51A9006CA6A2 /* LottieView.swift */,
 			);
 			path = DataServices;
@@ -285,6 +301,7 @@
 				3DD859602803ABE100A862DA /* LocationsListView.swift */,
 				3DD859632803C0EC00A862DA /* LocationPreviewView.swift */,
 				3DD859662803D11A00A862DA /* LocationMapAnnotationView.swift */,
+				D385448B280CC505007FAC83 /* CameraViewDelegate.swift */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
@@ -292,6 +309,7 @@
 		967ED6B8267A767C005B2358 = {
 			isa = PBXGroup;
 			children = (
+				D385448E280CCB69007FAC83 /* iOS15--iOS--Info.plist */,
 				967ED6BD267A767C005B2358 /* Shared */,
 				967ED6D3267A767D005B2358 /* Tests iOS */,
 				967ED6DD267A767D005B2358 /* Tests macOS */,
@@ -318,7 +336,7 @@
 		967ED6C6267A767D005B2358 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				967ED6C5267A767D005B2358 /* DesignCode.app */,
+				967ED6C5267A767D005B2358 /* RecycleRight.app */,
 				967ED6CB267A767D005B2358 /* iOS15.app */,
 				967ED6D0267A767D005B2358 /* Tests iOS.xctest */,
 				967ED6DA267A767D005B2358 /* Tests macOS.xctest */,
@@ -443,9 +461,11 @@
 		96A4AB5526BDD2F8008642CE /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
-				96C7695626B9812E00FA23E9 /* AngularButton.swift */,
+				D3854482280C9B13007FAC83 /* AngularButton.swift */,
 				96692672269F2BEB0041C3EF /* CloseButton.swift */,
 				965C78A726C6FFDF00E788C2 /* PlayButton.swift */,
+				D3854485280C9B8D007FAC83 /* VoiceButton.swift */,
+				D385448F280CCE87007FAC83 /* LabelButton.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -493,9 +513,10 @@
 			name = "iOS15 (iOS)";
 			packageProductDependencies = (
 				3D2853BA280A513B006CA6A2 /* Lottie */,
+				D3854489280CC2F8007FAC83 /* CameraView */,
 			);
 			productName = "iOS15 (iOS)";
-			productReference = 967ED6C5267A767D005B2358 /* DesignCode.app */;
+			productReference = 967ED6C5267A767D005B2358 /* RecycleRight.app */;
 			productType = "com.apple.product-type.application";
 		};
 		967ED6CA267A767D005B2358 /* iOS15 (macOS) */ = {
@@ -588,6 +609,7 @@
 			mainGroup = 967ED6B8267A767C005B2358;
 			packageReferences = (
 				3D2853B9280A513B006CA6A2 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				D3854488280CC2F8007FAC83 /* XCRemoteSwiftPackageReference "CameraView" */,
 			);
 			productRefGroup = 967ED6C6267A767D005B2358 /* Products */;
 			projectDirPath = "";
@@ -645,22 +667,26 @@
 				96692670269F28DD0041C3EF /* LogoView.swift in Sources */,
 				3DCECFA12803361200F3C3AB /* EWasteMapView.swift in Sources */,
 				968B4E4626BC67F900B4E70B /* Topic.swift in Sources */,
+				D3854490280CCE87007FAC83 /* LabelButton.swift in Sources */,
+				D3854483280C9B13007FAC83 /* AngularButton.swift in Sources */,
+				D3854486280C9B8D007FAC83 /* VoiceButton.swift in Sources */,
 				968B4E4026BC666800B4E70B /* ListRow.swift in Sources */,
 				9637E12626C47B5200DEF71D /* SectionView.swift in Sources */,
 				96A4AB4F26BDCADA008642CE /* CertificateView.swift in Sources */,
 				968B4E3D26BC5B0F00B4E70B /* TextModifiers.swift in Sources */,
+				D3D4269C280B3D2B00270EFA /* LocationsDataService.swift in Sources */,
 				96C8E28826B05EE200BBA0DD /* SigninView.swift in Sources */,
 				3DD859672803D11B00A862DA /* LocationMapAnnotationView.swift in Sources */,
 				969FAAEB268388EB007D1C4C /* SearchView.swift in Sources */,
 				969FAB012684FAA4007D1C4C /* Modifiers.swift in Sources */,
 				3D2853BD280A51A9006CA6A2 /* LottieView.swift in Sources */,
 				96A4AB4926BD7746008642CE /* CircularView.swift in Sources */,
-				96C7695726B9812E00FA23E9 /* AngularButton.swift in Sources */,
 				96C9698A2704B27200CCAC27 /* Update.swift in Sources */,
 				3DD859492803659100A862DA /* ARControlView.swift in Sources */,
 				3D2853C3280B09C0006CA6A2 /* ScanView.swift in Sources */,
 				96A4AB4326BC8703008642CE /* CourseSection.swift in Sources */,
 				3D9FA7D927FFB883007B107E /* Feature.swift in Sources */,
+				D385448C280CC505007FAC83 /* CameraViewDelegate.swift in Sources */,
 				96775C5226CDAAFB007B83B2 /* Tab.swift in Sources */,
 				9637E12326C479C400DEF71D /* CourseView.swift in Sources */,
 				96C8E28226B0547700BBA0DD /* SignupView.swift in Sources */,
@@ -673,7 +699,6 @@
 				965C78AB26CD502400E788C2 /* ColorExtension.swift in Sources */,
 				968B4E4C26BC758C00B4E70B /* Handbook.swift in Sources */,
 				3DD859642803C0EC00A862DA /* LocationPreviewView.swift in Sources */,
-				3DD8595828038E6A00A862DA /* LocationsDataService.swift in Sources */,
 				3DD859612803ABE200A862DA /* LocationsListView.swift in Sources */,
 				3DD8595D280392F500A862DA /* LocationsViewModel.swift in Sources */,
 				3DDE155D2800FA51001F83E4 /* FeatureItemMP.swift in Sources */,
@@ -700,6 +725,7 @@
 				96C8E27F26B053B000BBA0DD /* ModalView.swift in Sources */,
 				968B4E3726BC312D00B4E70B /* Model.swift in Sources */,
 				96460536267D7603003F4A4F /* CourseItem.swift in Sources */,
+				D3854493280CDAA8007FAC83 /* Resnet50.mlmodel in Sources */,
 				967ED6E0267A767D005B2358 /* iOS15App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -712,22 +738,26 @@
 				96692671269F28DD0041C3EF /* LogoView.swift in Sources */,
 				3DCECFA22803361200F3C3AB /* EWasteMapView.swift in Sources */,
 				968B4E4726BC67F900B4E70B /* Topic.swift in Sources */,
+				D3854491280CCE87007FAC83 /* LabelButton.swift in Sources */,
+				D3854484280C9B13007FAC83 /* AngularButton.swift in Sources */,
+				D3854487280C9B8D007FAC83 /* VoiceButton.swift in Sources */,
 				968B4E4126BC666800B4E70B /* ListRow.swift in Sources */,
 				9637E12726C47B5200DEF71D /* SectionView.swift in Sources */,
 				96A4AB5026BDCADA008642CE /* CertificateView.swift in Sources */,
 				968B4E3E26BC5B0F00B4E70B /* TextModifiers.swift in Sources */,
+				D3D4269D280B3D2B00270EFA /* LocationsDataService.swift in Sources */,
 				96C8E28926B05EE200BBA0DD /* SigninView.swift in Sources */,
 				3DD859682803D11B00A862DA /* LocationMapAnnotationView.swift in Sources */,
 				969FAAEC268388EB007D1C4C /* SearchView.swift in Sources */,
 				969FAB022684FAA4007D1C4C /* Modifiers.swift in Sources */,
 				3D2853BE280A51A9006CA6A2 /* LottieView.swift in Sources */,
 				96A4AB4A26BD7746008642CE /* CircularView.swift in Sources */,
-				96C7695826B9812E00FA23E9 /* AngularButton.swift in Sources */,
 				96C9698B2704B27200CCAC27 /* Update.swift in Sources */,
 				3DD8594A2803659100A862DA /* ARControlView.swift in Sources */,
 				3D2853C4280B09C0006CA6A2 /* ScanView.swift in Sources */,
 				96A4AB4426BC8703008642CE /* CourseSection.swift in Sources */,
 				3D9FA7DA27FFB883007B107E /* Feature.swift in Sources */,
+				D385448D280CC505007FAC83 /* CameraViewDelegate.swift in Sources */,
 				96775C5326CDAAFB007B83B2 /* Tab.swift in Sources */,
 				9637E12426C479C400DEF71D /* CourseView.swift in Sources */,
 				96C8E28326B0547700BBA0DD /* SignupView.swift in Sources */,
@@ -740,7 +770,6 @@
 				965C78AC26CD502400E788C2 /* ColorExtension.swift in Sources */,
 				968B4E4D26BC758C00B4E70B /* Handbook.swift in Sources */,
 				3DD859652803C0EC00A862DA /* LocationPreviewView.swift in Sources */,
-				3DD8595728038E6A00A862DA /* LocationsDataService.swift in Sources */,
 				3DD859622803ABE200A862DA /* LocationsListView.swift in Sources */,
 				3DD8595E280392F500A862DA /* LocationsViewModel.swift in Sources */,
 				3DDE155E2800FA51001F83E4 /* FeatureItemMP.swift in Sources */,
@@ -767,6 +796,7 @@
 				96C8E28026B053B000BBA0DD /* ModalView.swift in Sources */,
 				968B4E3826BC312D00B4E70B /* Model.swift in Sources */,
 				96460537267D7603003F4A4F /* CourseItem.swift in Sources */,
+				D3854494280CDAA9007FAC83 /* Resnet50.mlmodel in Sources */,
 				967ED6E1267A767D005B2358 /* iOS15App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -925,12 +955,14 @@
 				DEVELOPMENT_TEAM = THV47RYFCP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS15--iOS--Info.plist";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Allow camera usage for AR Capabilites you sexy beast ;)";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -940,7 +972,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = victoriahagenlocker;
-				PRODUCT_NAME = DesignCode;
+				PRODUCT_NAME = RecycleRight;
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -959,12 +991,14 @@
 				DEVELOPMENT_TEAM = THV47RYFCP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS15--iOS--Info.plist";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Allow camera usage for AR Capabilites you sexy beast ;)";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -974,7 +1008,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = victoriahagenlocker;
-				PRODUCT_NAME = DesignCode;
+				PRODUCT_NAME = RecycleRight;
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -1203,6 +1237,14 @@
 				minimumVersion = 3.0.0;
 			};
 		};
+		D3854488280CC2F8007FAC83 /* XCRemoteSwiftPackageReference "CameraView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/brettfazio/CameraView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1210,6 +1252,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 3D2853B9280A513B006CA6A2 /* XCRemoteSwiftPackageReference "lottie-ios" */;
 			productName = Lottie;
+		};
+		D3854489280CC2F8007FAC83 /* CameraView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D3854488280CC2F8007FAC83 /* XCRemoteSwiftPackageReference "CameraView" */;
+			productName = CameraView;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
