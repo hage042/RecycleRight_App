@@ -7,9 +7,9 @@
 
 import SwiftUI
 import RealityKit
+import ARKit
 
 struct ScanABinView: View {
-    
     var namespace: Namespace.ID
     @Binding var course: Course
     var isAnimated = true
@@ -26,6 +26,7 @@ struct ScanABinView: View {
     var body: some View {
         ZStack {
             ARViewContainer()
+            /*
                 .coordinateSpace(name: "scroll")
                 .background(Color("Green"))
                 .mask(RoundedRectangle(cornerRadius: appear[0] ? 0 : 30))
@@ -36,6 +37,7 @@ struct ScanABinView: View {
                 .background(Color("Green").opacity(viewState.width / 500))
                 .background(.ultraThinMaterial)
                 .gesture(isAnimated ? drag : nil)
+             */
                 .ignoresSafeArea()
             
             ARControlView()
@@ -112,18 +114,21 @@ struct ScanABinView: View {
     
     
     struct ARViewContainer: UIViewRepresentable {
-        func makeUIView(context: Context) -> ARView {
-            let arView = ARView(frame: .zero)
+        var placeVar = true
+        func makeUIView(context: Context) -> CustomARView {
+            let arView = CustomARView(frame: .zero)
             return arView
         }
         
-        func updateUIView(_ uiView: ARView, context: Context) {
+        func updateUIView(_ uiView: CustomARView, context: Context) {
             
         }
-    }
-    
-    
-    
+        
+        private mutating func updateScene(for arView: CustomARView) {
+
+            }
+        }
+
     
     func close() {
         withAnimation {

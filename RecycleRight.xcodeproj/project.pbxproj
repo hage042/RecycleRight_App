@@ -14,6 +14,9 @@
 		3D2853C1280A5401006CA6A2 /* Lottie.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D2853BF280A5401006CA6A2 /* Lottie.xcassets */; };
 		3D2853C3280B09C0006CA6A2 /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2853C2280B09C0006CA6A2 /* ScanView.swift */; };
 		3D2853C4280B09C0006CA6A2 /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2853C2280B09C0006CA6A2 /* ScanView.swift */; };
+		3D2853E8280CCF74006CA6A2 /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = 3D2853E7280CCF74006CA6A2 /* FocusEntity */; };
+		3D2853EA280CCFB9006CA6A2 /* CustomARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2853E9280CCFB9006CA6A2 /* CustomARView.swift */; };
+		3D2853EB280CCFB9006CA6A2 /* CustomARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2853E9280CCFB9006CA6A2 /* CustomARView.swift */; };
 		3D73F24C27FD44D3005893A8 /* CompostIntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D73F24B27FD44D3005893A8 /* CompostIntroView.swift */; };
 		3D73F24D27FD44D3005893A8 /* CompostIntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D73F24B27FD44D3005893A8 /* CompostIntroView.swift */; };
 		3D9FA7D927FFB883007B107E /* Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9FA7D827FFB883007B107E /* Feature.swift */; };
@@ -157,6 +160,7 @@
 		3D2853BC280A51A9006CA6A2 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 		3D2853BF280A5401006CA6A2 /* Lottie.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Lottie.xcassets; sourceTree = "<group>"; };
 		3D2853C2280B09C0006CA6A2 /* ScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanView.swift; sourceTree = "<group>"; };
+		3D2853E9280CCFB9006CA6A2 /* CustomARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomARView.swift; sourceTree = "<group>"; };
 		3D73F24B27FD44D3005893A8 /* CompostIntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompostIntroView.swift; sourceTree = "<group>"; };
 		3D9FA7D827FFB883007B107E /* Feature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature.swift; sourceTree = "<group>"; };
 		3DCECFA02803361100F3C3AB /* EWasteMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EWasteMapView.swift; sourceTree = "<group>"; };
@@ -229,6 +233,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D2853E8280CCF74006CA6A2 /* FocusEntity in Frameworks */,
 				3D2853BB280A513B006CA6A2 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,6 +262,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D2853E1280CCCFE006CA6A2 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				3DD8595928038F1200A862DA /* LocationsView.swift */,
+				3DD859602803ABE100A862DA /* LocationsListView.swift */,
+				3DD859632803C0EC00A862DA /* LocationPreviewView.swift */,
+				3DD859662803D11A00A862DA /* LocationMapAnnotationView.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		3D2853E2280CCD2B006CA6A2 /* AR */ = {
+			isa = PBXGroup;
+			children = (
+				3DD859482803659100A862DA /* ARControlView.swift */,
+				3D2853E9280CCFB9006CA6A2 /* CustomARView.swift */,
+				3DDE155F28011C36001F83E4 /* ScanABinView.swift */,
+			);
+			path = AR;
+			sourceTree = "<group>";
+		};
 		3DD8595528038E5000A862DA /* DataServices */ = {
 			isa = PBXGroup;
 			children = (
@@ -280,11 +306,6 @@
 			children = (
 				3D73F24B27FD44D3005893A8 /* CompostIntroView.swift */,
 				3DCECFA02803361100F3C3AB /* EWasteMapView.swift */,
-				3DDE155F28011C36001F83E4 /* ScanABinView.swift */,
-				3DD8595928038F1200A862DA /* LocationsView.swift */,
-				3DD859602803ABE100A862DA /* LocationsListView.swift */,
-				3DD859632803C0EC00A862DA /* LocationPreviewView.swift */,
-				3DD859662803D11A00A862DA /* LocationMapAnnotationView.swift */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
@@ -345,6 +366,8 @@
 		969FAAFC2684F795007D1C4C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				3D2853E2280CCD2B006CA6A2 /* AR */,
+				3D2853E1280CCCFE006CA6A2 /* Map */,
 				3DDE156228011C42001F83E4 /* Custom */,
 				96A4AB5126BDD26C008642CE /* Main */,
 				96A4AB5326BDD2A3008642CE /* Detail */,
@@ -411,7 +434,6 @@
 				969FAAEA268388EB007D1C4C /* SearchView.swift */,
 				96ADB4A726E26BEF00301E48 /* AccountView.swift */,
 				96C8E28726B05EE200BBA0DD /* SigninView.swift */,
-				3DD859482803659100A862DA /* ARControlView.swift */,
 			);
 			path = Modals;
 			sourceTree = "<group>";
@@ -493,6 +515,7 @@
 			name = "iOS15 (iOS)";
 			packageProductDependencies = (
 				3D2853BA280A513B006CA6A2 /* Lottie */,
+				3D2853E7280CCF74006CA6A2 /* FocusEntity */,
 			);
 			productName = "iOS15 (iOS)";
 			productReference = 967ED6C5267A767D005B2358 /* DesignCode.app */;
@@ -588,6 +611,7 @@
 			mainGroup = 967ED6B8267A767C005B2358;
 			packageReferences = (
 				3D2853B9280A513B006CA6A2 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				3D2853E6280CCF74006CA6A2 /* XCRemoteSwiftPackageReference "FocusEntity" */,
 			);
 			productRefGroup = 967ED6C6267A767D005B2358 /* Products */;
 			projectDirPath = "";
@@ -659,6 +683,7 @@
 				96C9698A2704B27200CCAC27 /* Update.swift in Sources */,
 				3DD859492803659100A862DA /* ARControlView.swift in Sources */,
 				3D2853C3280B09C0006CA6A2 /* ScanView.swift in Sources */,
+				3D2853EA280CCFB9006CA6A2 /* CustomARView.swift in Sources */,
 				96A4AB4326BC8703008642CE /* CourseSection.swift in Sources */,
 				3D9FA7D927FFB883007B107E /* Feature.swift in Sources */,
 				96775C5226CDAAFB007B83B2 /* Tab.swift in Sources */,
@@ -726,6 +751,7 @@
 				96C9698B2704B27200CCAC27 /* Update.swift in Sources */,
 				3DD8594A2803659100A862DA /* ARControlView.swift in Sources */,
 				3D2853C4280B09C0006CA6A2 /* ScanView.swift in Sources */,
+				3D2853EB280CCFB9006CA6A2 /* CustomARView.swift in Sources */,
 				96A4AB4426BC8703008642CE /* CourseSection.swift in Sources */,
 				3D9FA7DA27FFB883007B107E /* Feature.swift in Sources */,
 				96775C5326CDAAFB007B83B2 /* Tab.swift in Sources */,
@@ -1203,6 +1229,14 @@
 				minimumVersion = 3.0.0;
 			};
 		};
+		3D2853E6280CCF74006CA6A2 /* XCRemoteSwiftPackageReference "FocusEntity" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/maxxfrazer/FocusEntity";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1210,6 +1244,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 3D2853B9280A513B006CA6A2 /* XCRemoteSwiftPackageReference "lottie-ios" */;
 			productName = Lottie;
+		};
+		3D2853E7280CCF74006CA6A2 /* FocusEntity */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3D2853E6280CCF74006CA6A2 /* XCRemoteSwiftPackageReference "FocusEntity" */;
+			productName = FocusEntity;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
