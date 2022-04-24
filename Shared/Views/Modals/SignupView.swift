@@ -21,12 +21,12 @@ struct SignupView: View {
     
     var body: some View {
         VStack(alignment: .leading, spacing: 20) {
-            Text("Sign up")
+            Text("Voice Search")
                 .font(.largeTitle).bold()
                 .blendMode(.overlay)
                 .slideFadeIn(show: appear[0], offset: 30)
             
-            Text("Access 120+ hours of courses, tutorials and livestreams")
+            Text("Say any object or material to see if its recyclable")
                 .font(.headline)
                 .foregroundColor(.primary.opacity(0.7))
                 .slideFadeIn(show: appear[1], offset: 20)
@@ -59,11 +59,11 @@ struct SignupView: View {
                 .autocapitalization(.none)
                 .disableAutocorrection(true)
                 .placeholder(when: text.isEmpty) {
-                    Text("Email address")
+                    Text("ex: plastic bag")
                         .foregroundColor(.primary)
                         .blendMode(.overlay)
                 }
-                .customField(icon: "envelope.open.fill")
+                .customField(icon: "mic.circle.fill")
                 .overlay(
                     GeometryReader { proxy in
                         let offset = proxy.frame(in: .named("stack")).minY + 22
@@ -82,47 +82,18 @@ struct SignupView: View {
                         }
                     }
                 }
-            
-            SecureField("", text: $password)
-                .textContentType(.password)
-                .placeholder(when: password.isEmpty) {
-                    Text("Password")
-                        .foregroundColor(.primary)
-                        .blendMode(.overlay)
-                }
-                .customField(icon: "key.fill")
-                .focused($isPasswordFocused)
-                .onChange(of: isPasswordFocused) { isPasswordFocused in
-                    if isPasswordFocused {
-                        withAnimation {
-                            circleY = circleInitialY + 70
-                        }
-                    }
-                }
-            
-            Button {
-                dismissModal()
-                isLogged = true
-            } label: {
-                AngularButton(title: "Create Account")
-            }
-            
-            Text("By clicking on Sign up, you agree to our **[Terms of service](https://designcode.io)** and **Privacy policy**.")
-                .font(.footnote)
-                .foregroundColor(.primary.opacity(0.7))
-                .accentColor(.primary.opacity(0.7))
-            
+        
             Divider()
             
-            Text("Already have an account? **Sign in**")
-                .font(.footnote)
-                .foregroundColor(.primary.opacity(0.7))
-                .accentColor(.primary.opacity(0.7))
-                .onTapGesture {
-                    withAnimation {
-                        model.selectedModal = .signIn
-                    }
-                }
+            Button {
+                //dismissModal()
+                //isLogged = true
+            } label: {
+                VoiceButton()
+            }
+            .frame(maxWidth: .infinity, maxHeight: 150, alignment: .center)
+            //.padding(10)
+            
         }
     }
     

@@ -59,7 +59,12 @@ struct NavigationBar: View {
                         }
                     }
                 } label: {
-                    avatar
+                    Image(systemName: "mic")
+                        .font(.system(size: 17, weight: .bold))
+                        .frame(width: 36, height: 36)
+                        .foregroundColor(.secondary)
+                        .background(.ultraThinMaterial)
+                        .backgroundStyle(cornerRadius: 16, opacity: 0.4)
                 }
                 .accessibilityElement()
                 .accessibilityLabel("Account")
